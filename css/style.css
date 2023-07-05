@@ -1,0 +1,134 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+body {
+  background-color: #cbd4d0;
+}
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 980px;
+  padding: 0 10px;
+  margin: 0 auto;
+  border: 1px solid #000;
+  margin-top: 50px;
+}
+.header {
+  display: flex;
+  padding-top: 80px;
+  align-items: center;
+}
+.title {
+  font-size: 35px;
+  margin-right: 100px;
+}
+.date {
+  border: 2px solid #07b06a;
+  border-radius: 3px;
+  background-color: #fff;
+  padding: 5px 10px;
+  font-size: 18px;
+}
+
+.task {
+  margin-top: 50px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 3px;
+  padding: 20px 30px 20px 20px;
+}
+
+.task-text {
+  margin-top: 5px;
+  width: 100%;
+}
+.form-control {
+  width: 100%;
+  padding-left: 5px;
+}
+.btn-add {
+  padding: 4px 20px;
+  background-color: #07b06a;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.item {
+  margin-top: 25px;
+  width: 100%;
+  background-color: #fff;
+}
+
+ul {
+  counter-reset: counter 0;
+}
+
+.item-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #07b06a;
+  border-radius: 3px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.item-list::before {
+  counter-increment: counter;
+  content: counter(counter);
+  margin-left: 5px;
+  color: #07b06a;
+  font-size: 18px;
+  /* text-align: top; */
+}
+
+.item-title {
+  width: 100%;
+  padding-left: 12px;
+  padding-right: 50px;
+  font-size: 18px;
+  overflow: hidden;
+}
+.item-title--done {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.item-title__btn {
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+  margin-left: 10px;
+}
+.item-btn {
+  background-color: #cbd4d0;
+  padding: 8px 10px;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.2s ease-in;
+  opacity: 0.5;
+}
+.item-btn:hover {
+  opacity: 1;
+  background-color: #cbd4d0;
+}
+.item-btn--done {
+  border: 1px solid #000;
+  opacity: 1;
+}
+.item-btn img {
+  pointer-events: none;
+}
