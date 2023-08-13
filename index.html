@@ -6,11 +6,18 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
+      <div class="time"></div>
       <div class="header">
-        <h1 class="title">My tasks for today</h1>
+        <h1 class="title">My tasks for today...</h1>
         <div class="date"></div>
       </div>
 
@@ -19,7 +26,14 @@
         <div class="task-text">
           <form id="form">
             <input id="taskInput" class="form-control" type="text" />
-            <button class="btn btn-add" type="submit">Add</button>
+            <button class="btn btn-add" type="submit">
+              <img
+                width="30"
+                height="30"
+                src="https://img.icons8.com/ios-glyphs/30/filled-plus-2-math.png"
+                alt="filled-plus-2-math"
+              />
+            </button>
           </form>
         </div>
       </div>
@@ -32,10 +46,10 @@
             <span class="item-title"></span>
             <div class="item-title__btn">
                 <button class="item-btn" type="button" data-action="done">
-                    <img src="./img/tick.svg" alt="done" width="15" height="15">
+                    <img src="./images/tick.svg" alt="done" width="15" height="15">
                 </button>
                 <button class="item-btn" type="button" data-action="delete">
-                    <img src="./img/cross.svg" alt="delete" width="15" height="15">
+                    <img src="./images/cross.svg" alt="delete" width="15" height="15">
                 </button>
             </div>
         </li> -->
